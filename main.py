@@ -1,15 +1,3 @@
-# CheeseCam - simple video recorder for assignment
-# Preview/Record toggle: Space
-# Quit: ESC
-# Extra features:
-#   - Flip horizontal: 'f'
-#   - Brightness/Contrast sliders (trackbars)
-#   - Codec cycle: 'c' (XVID <-> MP4V), file auto timestamp
-# Notes:
-#   - macOS: CAP_AVFOUNDATION 권장
-#   - Linux: CAP_V4L2 권장
-#   - Windows: CAP_DSHOW 시도 가능
-
 import cv2
 import time
 from datetime import datetime
@@ -36,7 +24,7 @@ def open_camera():
     return None
 
 def timestamp_name(ext):
-    # 예: record_20250915_142030.avi
+    # ex: record_20250915_142030.avi
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     return f"record_{ts}.{ext}"
 
@@ -76,7 +64,7 @@ def main():
     writer = None
     flip_h = False
 
-    # 코덱/컨테이너 토글 (추가기능)
+    # 코덱/컨테이너 토글
     codecs = [("XVID", "avi"), ("mp4v", "mp4")]   # FourCC, ext
     codec_idx = 0
 
