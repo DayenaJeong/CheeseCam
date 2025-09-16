@@ -52,7 +52,7 @@ python main.py
 
 ## 🎬 데모
 
-> ![demo](./demo.mov)
+> ![demo](./demo.gif)
 
 ---
 
