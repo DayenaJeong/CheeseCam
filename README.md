@@ -9,7 +9,7 @@
 
 - 카메라 영상을 실시간으로 화면에 표시
 - Space 키로 **Preview ↔ Record** 모드 전환
-- Record 모드에서는 빨간 점과 `REC` 표시 및 경과 시간(타이머) 출력
+- Record 모드에서는 빨간 점과 `REC` 표시 출력
 - 녹화된 영상은 실행 폴더에 자동 저장 (`record_YYYYMMDD_HHMMSS.avi / .mp4`)
 - ESC 키로 프로그램 종료
 - 밝기 / 대비 조절: 슬라이더(Trackbar)로 실시간 조정 가능
